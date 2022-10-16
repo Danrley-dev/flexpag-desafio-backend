@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "cfddeba7-64d2-4c54-b221-9c2ca18a9fc3",
+		"name": "Desafio-FlexPag",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21159129"
+	},
+	"item": [
+		{
+			"name": "FindByIdPayment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/payment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByAllPayment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatedPayment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"scheduledDate\": \"14/01/2022\",\r\n    \"scheduledHour\": \"08:00\",\r\n    \"depositValue\": \"1200.0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePayment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"scheduledDate\": \"14/01/2022\",\r\n    \"scheduledHour\": \"00:00\",\r\n    \"depositValue\": \"1500.0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/payment/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payment",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePayment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/payment/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

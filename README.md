@@ -55,6 +55,7 @@ A aplicação já está com o pre setup default.
 - spring-boot-devtools
 - h2
 - lombok
+- model mapper
 
 | componente | porta |
 | --------- | ----------- |
